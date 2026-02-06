@@ -1,0 +1,128 @@
+/* ============================================
+   Layout: Containers, Grids, Spacing
+   ============================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin-inline: auto;
+  padding-inline: var(--space-5);
+}
+
+.container--narrow {
+  max-width: var(--container-md);
+}
+
+.container--wide {
+  max-width: var(--container-2xl);
+}
+
+/* === Sections === */
+.section {
+  padding-block: clamp(var(--space-8), 6vw, var(--space-12));
+}
+
+.section--dark {
+  background-color: var(--color-charcoal);
+  color: var(--color-cream);
+}
+
+.section--dark p {
+  color: rgba(250, 243, 232, 0.8);
+}
+
+.section--alt {
+  background-color: var(--color-cream-dark);
+}
+
+.section--gradient {
+  background: var(--gradient-subtle);
+}
+
+/* === Grid Layouts === */
+.grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.grid--2 {
+  grid-template-columns: 1fr;
+}
+
+.grid--3 {
+  grid-template-columns: 1fr;
+}
+
+.grid--4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid--4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* === Flex Utilities === */
+.flex {
+  display: flex;
+}
+
+.flex--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex--gap-sm {
+  gap: var(--space-3);
+}
+
+.flex--gap {
+  gap: var(--space-5);
+}
+
+.flex--gap-lg {
+  gap: var(--space-8);
+}
+
+/* === Text Alignment === */
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}

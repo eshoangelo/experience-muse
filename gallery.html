@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Experience Muse</title>
+  <meta name="description" content="Browse photos of Experience Muse - our cozy interior, signature drinks, delicious food, and vibrant community in Sterling Heights, MI.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gallery | Experience Muse">
+  <meta property="og:description" content="Browse photos of our cozy coffee shop, signature drinks, and vibrant community.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="gallery">
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/logo.svg" alt="Experience Muse" width="120" height="48">
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--primary nav__cta">Visit Us</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="menu.html" class="nav-link">Menu</a>
+    <a href="gallery.html" class="nav-link active">Gallery</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html" class="btn btn--primary">Visit Us</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero hero--half">
+      <div class="hero__bg">
+        <img src="assets/images/hero/ourmenu.png" alt="Experience Muse gallery" width="1920" height="1080">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <p class="hero__breadcrumb"><a href="index.html">Home</a> / Gallery</p>
+        <h1>Gallery</h1>
+      </div>
+    </section>
+
+    <!-- ===== PHOTO GALLERY ===== -->
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="overline">Our Space & Creations</span>
+          <h2>A Glimpse Inside Muse</h2>
+          <p>From signature drinks to cozy corners, explore the Experience Muse vibe.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-delay="1">
+            <img src="assets/images/lifestyle/golden-hour-drinks.png" alt="Two Muse iced drinks in golden hour light" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-delay="2">
+            <img src="assets/images/lifestyle/stylish-customer.png" alt="Stylish customer with Muse iced coffee" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-delay="1">
+            <img src="assets/images/lifestyle/matcha-closeup.png" alt="Muse matcha held with jewelry on fur" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-delay="2">
+            <img src="assets/images/lifestyle/matcha-pour.png" alt="Sparkling water poured into Muse matcha" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-delay="3">
+            <img src="assets/images/lifestyle/friends-christmas.png" alt="Friends sipping Muse drinks by the Christmas tree" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-delay="1">
+            <img src="assets/images/lifestyle/halloween-storefront.png" alt="Halloween display at Muse storefront" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-delay="2">
+            <img src="assets/images/lifestyle/autumn-drinks.png" alt="Muse latte and matcha on autumn hay bale" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-delay="3">
+            <img src="assets/images/lifestyle/cozy-fur-drinks.png" alt="Two Muse drinks in cozy fur setting" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INSTAGRAM FEED ===== -->
+    <section class="section section--dark instagram-section" id="instagram">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="overline">Follow the Vibe</span>
+          <h2>@experience_muse</h2>
+          <p>Fresh shots from our feed. Tag us in your visits!</p>
+        </div>
+
+        <div class="instagram-grid reveal">
+          <a href="https://www.instagram.com/experience_muse/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+            <img src="assets/images/gallery/muse-drinks-1.png" alt="Muse drinks" width="400" height="400" loading="lazy">
+            <div class="instagram-overlay">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/experience_muse/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+            <img src="assets/images/gallery/muse-drinks-2.png" alt="Coffee vibes" width="400" height="400" loading="lazy">
+            <div class="instagram-overlay">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/experience_muse/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+            <img src="assets/images/gallery/muse-drinks-3.png" alt="Muse experience" width="400" height="400" loading="lazy">
+            <div class="instagram-overlay">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/experience_muse/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+            <img src="assets/images/lifestyle/autumn-drinks.png" alt="Muse branded cup" width="400" height="400" loading="lazy">
+            <div class="instagram-overlay">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/experience_muse/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+            <img src="assets/images/gallery/muse-founders.png" alt="The Muse founders" width="400" height="400" loading="lazy">
+            <div class="instagram-overlay">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/experience_muse/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+            <img src="assets/images/about/founders.png" alt="Behind the counter" width="400" height="400" loading="lazy">
+            <div class="instagram-overlay">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+          </a>
+        </div>
+
+        <div class="text-center" style="margin-top: var(--space-8);">
+          <a href="https://www.instagram.com/experience_muse/" target="_blank" rel="noopener noreferrer" class="btn btn--outline-light btn--lg">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            Follow @experience_muse
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__gradient-line"></div>
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <img src="assets/images/logo.svg" alt="Experience Muse" class="footer__logo" width="150" height="60">
+        <p>Craft coffee, community, and culture in Sterling Heights. Every cup is an experience.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/experience_muse/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.9 224.1 370.9 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1S3.8 127.9 2.1 163.8c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4>Visit Us</h4>
+        <p>2133 15 Mile Rd<br>Sterling Heights, MI 48310</p>
+        <p style="margin-top: var(--space-3);"><a href="tel:+15863012081">(586) 301-2081</a></p>
+        <p style="margin-top: var(--space-3);">Mon-Sun: 9AM-10PM<br>Wed: until 7:30PM<br>Thu: from 11AM</p>
+      </div>
+      <div class="footer__col">
+        <h4>Stay Connected</h4>
+        <p>Get updates on new drinks, events, and special offers.</p>
+        <form class="footer__newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed!'; this.querySelector('input').value='';">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter" required>
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year"></span> Experience Muse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script defer src="js/navigation.js"></script>
+  <script defer src="js/scroll-animations.js"></script>
+  <script defer src="js/lightbox.js"></script>
+  <script defer src="js/app.js"></script>
+</body>
+</html>

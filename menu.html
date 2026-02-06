@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu | Experience Muse</title>
+  <meta name="description" content="Explore the full Experience Muse menu. Signature cloud drinks, espresso, matcha, frappes, refreshers, teas, and food. Sterling Heights, MI.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Our Menu | Experience Muse">
+  <meta property="og:description" content="Signature cloud drinks, espresso, matcha, frappes, and more. Explore our full menu.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="menu">
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/logo.svg" alt="Experience Muse" width="120" height="48">
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--primary nav__cta">Visit Us</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="menu.html" class="nav-link active">Menu</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html" class="btn btn--primary">Visit Us</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ===== HERO (Half-height) ===== -->
+    <section class="hero hero--half">
+      <div class="hero__bg">
+        <img src="assets/images/lifestyle/golden-hour-drinks.png" alt="Muse iced latte and matcha in golden hour" width="1920" height="1080">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <div class="hero__breadcrumb">
+          <a href="index.html">Home</a> / <span>Menu</span>
+        </div>
+        <h1>Our <span class="gradient-text">Menu</span></h1>
+      </div>
+    </section>
+
+    <!-- ===== FILTER BAR ===== -->
+    <div class="menu-filter" id="menuFilter">
+      <div class="container">
+        <div class="menu-filter__buttons" role="tablist" aria-label="Filter menu by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+          <button class="filter-btn" data-filter="food" role="tab" aria-selected="false">Food</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== MENU CONTENT ===== -->
+    <section class="section menu-section">
+      <div class="container">
+
+        <!-- Drinks -->
+        <div class="menu-category" id="drinks">
+          <h3 class="menu-category__title">Drinks</h3>
+          <div class="menu-category__grid">
+
+            <div class="menu-item card" data-category="drinks">
+              <div class="card__image">
+                <img src="assets/images/drinks/Cocunut-Latte.png" alt="Coconut Latte" width="400" height="300" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="badge badge--outline">POPULAR</span>
+                <span class="price">$7.00</span>
+              </div>
+            </div>
+
+            <div class="menu-item card" data-category="drinks">
+              <div class="card__image">
+                <img src="assets/images/drinks/Collagen-Latte.png" alt="Collagen Matcha Latte" width="400" height="300" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="badge">SIGNATURE</span>
+                <span class="price">$8.00</span>
+              </div>
+            </div>
+
+            <div class="menu-item card" data-category="drinks">
+              <div class="card__image">
+                <img src="assets/images/drinks/Rose-Lemonade-Refresher.png" alt="Rose Lemonade Refresher" width="400" height="300" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="badge">NEW</span>
+                <span class="price">$6.50</span>
+              </div>
+            </div>
+
+            <div class="menu-item card" data-category="drinks">
+              <div class="card__image">
+                <img src="assets/images/drinks/Pistachio-Frappe.png" alt="Pistachio Frappe" width="400" height="300" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="badge">NEW</span>
+                <span class="price">$9.00</span>
+              </div>
+            </div>
+
+            <div class="menu-item card" data-category="drinks">
+              <div class="card__image">
+                <img src="assets/images/drinks/Expresso-Frappe.png" alt="Espresso Frappe" width="400" height="300" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="badge">FAN FAVORITE</span>
+                <span class="price">$9.00</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Food -->
+        <div class="menu-category" id="food">
+          <h3 class="menu-category__title">Food</h3>
+          <div class="menu-category__grid">
+
+            <div class="menu-item card" data-category="food">
+              <div class="card__image">
+                <img src="assets/images/food/Caprse-Croffle.png" alt="Caprese Croffle" width="400" height="300" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="badge">NEW</span>
+                <span class="price">$9.00</span>
+              </div>
+            </div>
+
+            <div class="menu-item card" data-category="food">
+              <div class="card__image">
+                <img src="assets/images/food/Avocado-Toast.png" alt="Avocado Toast" width="400" height="300" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="badge badge--outline">POPULAR</span>
+                <span class="price">$10.00</span>
+              </div>
+            </div>
+
+            <div class="menu-item card" data-category="food">
+              <div class="card__image">
+                <img src="assets/images/food/Mediterranean-Toast.png" alt="Mediterranean Toast" width="400" height="300" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="badge">NEW</span>
+                <span class="price">$10.00</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__gradient-line"></div>
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <img src="assets/images/logo.svg" alt="Experience Muse" class="footer__logo" width="150" height="60">
+        <p>Craft coffee, community, and culture in Sterling Heights. Every cup is an experience.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/experience_muse/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.9 224.1 370.9 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1S3.8 127.9 2.1 163.8c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4>Visit Us</h4>
+        <p>2133 15 Mile Rd<br>Sterling Heights, MI 48310</p>
+        <p style="margin-top: var(--space-3);"><a href="tel:+15863012081">(586) 301-2081</a></p>
+        <p style="margin-top: var(--space-3);">Mon-Sun: 9AM-10PM<br>Wed: until 7:30PM<br>Thu: from 11AM</p>
+      </div>
+      <div class="footer__col">
+        <h4>Stay Connected</h4>
+        <p>Get updates on new drinks, events, and special offers.</p>
+        <form class="footer__newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed!'; this.querySelector('input').value='';">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter" required>
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year"></span> Experience Muse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script defer src="js/navigation.js"></script>
+  <script defer src="js/scroll-animations.js"></script>
+  <script defer src="js/menu-filter.js"></script>
+  <script defer src="js/app.js"></script>
+</body>
+</html>

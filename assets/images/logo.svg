@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <!-- Cream background (transparent - will inherit from page) -->
+
+  <!-- EXPERIENCE text - thin, widely spaced, light gray -->
+  <text x="200" y="65" text-anchor="middle"
+        font-family="'Lato', 'Helvetica Neue', Arial, sans-serif"
+        font-size="20" font-weight="300"
+        letter-spacing="12"
+        fill="#9B9590">EXPERIENCE</text>
+
+  <!-- MUSE text - large Didone serif, dark charcoal -->
+  <text x="200" y="155" text-anchor="middle"
+        font-family="'Playfair Display', 'Didot', 'Bodoni MT', Georgia, serif"
+        font-size="110" font-weight="400"
+        letter-spacing="8"
+        fill="#4A4543">MUSE</text>
+</svg>

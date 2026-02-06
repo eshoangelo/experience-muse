@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Experience Muse</title>
+  <meta name="description" content="Get in touch with Experience Muse. Visit us at 2133 15 Mile Rd, Sterling Heights, MI 48310 or call (586) 301-2081.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact | Experience Muse">
+  <meta property="og:description" content="Visit us in Sterling Heights or get in touch. We'd love to hear from you.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="contact">
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/logo.svg" alt="Experience Muse" width="120" height="48">
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--primary nav__cta">Visit Us</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="menu.html" class="nav-link">Menu</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+    <a href="contact.html" class="btn btn--primary">Visit Us</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero hero--half">
+      <div class="hero__bg">
+        <img src="assets/images/gallery/muse-founders.png" alt="Experience Muse founders in vintage car" width="1920" height="1080">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <p class="hero__breadcrumb"><a href="index.html">Home</a> / Contact</p>
+        <h1>Get In Touch</h1>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Contact Form -->
+          <div class="contact-form reveal--left">
+            <h2>Send Us a Message</h2>
+            <p>Have a question, want to book an event, or just want to say hi? Fill out the form below and we'll get back to you as soon as possible.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-group" id="field-name">
+                <div class="form-field">
+                  <input type="text" id="name" name="name" required autocomplete="name" placeholder=" ">
+                  <label for="name">Name *</label>
+                </div>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group" id="field-email">
+                <div class="form-field">
+                  <input type="email" id="email" name="email" required autocomplete="email" placeholder=" ">
+                  <label for="email">Email *</label>
+                </div>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group" id="field-phone">
+                <div class="form-field">
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder=" ">
+                  <label for="phone">Phone (optional)</label>
+                </div>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group" id="field-subject">
+                <div class="form-field">
+                  <select id="subject" name="subject" required>
+                    <option value="" disabled selected></option>
+                    <option value="general">General Inquiry</option>
+                    <option value="catering">Catering</option>
+                    <option value="events">Events</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <label for="subject">Subject *</label>
+                </div>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group" id="field-message">
+                <div class="form-field">
+                  <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                  <label for="message">Message *</label>
+                </div>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg contact-form__submit">
+                Send Message
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+
+            <!-- Success Message -->
+            <div class="contact-form__success" id="formSuccess" hidden>
+              <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+
+          <!-- Contact Info Card -->
+          <div class="contact-info reveal--right">
+            <div class="contact-info__card">
+              <h3>Visit Experience Muse</h3>
+
+              <div class="contact-info__detail">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                  <strong>Address</strong>
+                  <p>County Line Plaza<br>2133 15 Mile Rd<br>Sterling Heights, MI 48310</p>
+                </div>
+              </div>
+
+              <div class="contact-info__detail">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div>
+                  <strong>Phone</strong>
+                  <p><a href="tel:+15863012081">(586) 301-2081</a></p>
+                </div>
+              </div>
+
+              <div class="contact-info__detail">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div>
+                  <strong>Hours</strong>
+                  <table class="contact-info__hours">
+                    <tr><td>Mon, Tue, Fri</td><td>9:00 AM - 10:00 PM</td></tr>
+                    <tr><td>Wednesday</td><td>9:00 AM - 7:30 PM</td></tr>
+                    <tr><td>Thursday</td><td>11:00 AM - 10:00 PM</td></tr>
+                    <tr><td>Sat & Sun</td><td>9:00 AM - 10:00 PM</td></tr>
+                  </table>
+                </div>
+              </div>
+
+              <div class="contact-info__social">
+                <a href="https://www.instagram.com/experience_muse/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <svg viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.9 224.1 370.9 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1S3.8 127.9 2.1 163.8c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+              </div>
+
+              <div class="contact-info__badges">
+                <div class="contact-info__badge">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5M8 14v.5M16 14v.5M11.25 16.25h1.5L12 17l-.75-.75z"/><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444a11.702 11.702 0 0 0-.493-3.309"/></svg>
+                  <span>Dog Friendly</span>
+                </div>
+                <div class="contact-info__badge">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h2a2 2 0 012 2v6a2 2 0 01-2 2H6"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="16.5" cy="18.5" r="2.5"/></svg>
+                  <span>Free Parking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MAP SECTION ===== -->
+    <section class="section map-section">
+      <div class="container">
+        <div class="map-wrapper reveal">
+          <iframe src="https://www.google.com/maps?q=Experience+Muse,+2133+15+Mile+Rd,+Sterling+Heights,+MI+48310&output=embed" width="100%" height="450" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" title="Experience Muse location"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__gradient-line"></div>
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <img src="assets/images/logo.svg" alt="Experience Muse" class="footer__logo" width="150" height="60">
+        <p>Craft coffee, community, and culture in Sterling Heights. Every cup is an experience.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/experience_muse/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.9 224.1 370.9 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1S3.8 127.9 2.1 163.8c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4>Visit Us</h4>
+        <p>2133 15 Mile Rd<br>Sterling Heights, MI 48310</p>
+        <p style="margin-top: var(--space-3);"><a href="tel:+15863012081">(586) 301-2081</a></p>
+        <p style="margin-top: var(--space-3);">Mon-Sun: 9AM-10PM<br>Wed: until 7:30PM<br>Thu: from 11AM</p>
+      </div>
+      <div class="footer__col">
+        <h4>Stay Connected</h4>
+        <p>Get updates on new drinks, events, and special offers.</p>
+        <form class="footer__newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed!'; this.querySelector('input').value='';">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter" required>
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year"></span> Experience Muse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script defer src="js/navigation.js"></script>
+  <script defer src="js/scroll-animations.js"></script>
+  <script defer src="js/form-validation.js"></script>
+  <script defer src="js/app.js"></script>
+</body>
+</html>
